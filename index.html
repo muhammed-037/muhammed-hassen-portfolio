@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional CV of Muhammed Hassen Dawd, IT Graduate and MERN Stack Developer">
+    <title>My Professional CV</title>
+    <!-- Link your own CSS file here if needed -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body class="bg-light">
+
+    <!-- Header Section -->
+    <header id="main-header" class="header-container">
+        <h1 class="user-name">MUHAMMED HASSEN DAWD</h1>
+        <img src="profile-photo.jpg" alt="Muhammed Hassen's profile photo" class="profile-img" width="250" height="300">
+        <p class="job-title">Aspiring MERN Stack Developer, IT Graduate</p>
+        
+        <nav id="navbar" class="main-nav">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#about" class="link">About Me</a></li>
+                <li class="nav-item"><a href="#education" class="link">Education</a></li>
+                <li class="nav-item"><a href="#experience" class="link">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <!-- About Me Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="bio-container">
+                <p class="bio-text">
+                    I am a dedicated MERN Stack web development student
+                     and a graduate of Debre Berhan University,<br>
+                      where I earned my degree in Information Technology
+                       from the College of Computing.<br>
+                        I have mastered HTML and am currently advancing
+                         my skills to become a full-stack developer.<br>
+                          My goal is to provide high-quality web development
+                           services on Upwork and build impactful digital solutions.
+                        </p>
+            </div>
+            
+            
+        </section>
+
+        <hr class="divider">
+
+        <!-- Education Section -->
+        <section id="education" class="content-section">
+            <h2 class="section-title">Education</h2>
+            <table border="1" id="edu-table" class="data-table">
+                <thead class="table-head">
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr class="table-row">
+                        <td>2022-2025</td>
+                        <td>Debre Berhan University College of Computing</td>
+                        <td>Bachelor's Degree in Information Technology</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>Present</td>
+                        <td>AI-powered MERN Stack Course</td>
+                        <td>Full-Stack Web Development in progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="content-section">
+            <h2 class="section-title">Work Experience</h2>
+            <ul class="exp-list">
+<li class="exp-item">
+                    <strong class="project-name">
+                        Personal Portfolio Website
+                    </strong>
+                    <p class="exp-desc">
+                        i developed this portfolio website entirely using HTML to demonstrate my understanding of web structureand accessibility.</p>
+                </li>
+                
+            </ul>
+        </section>
+
+        <hr class="divider">
+
+        <!--Skills Section -->
+        <section id="skills" class="content-section">
+            <h2 class="section-title"> Skills</h2>
+            <ol class="skills-grid">
+                <li class="skill-tag">HTML5 (Expert)</li>
+                <li class="skill-tag">Semantic Elements</li>
+                <li class="skill-tag">Form Validation</li>
+                <li class="skill-tag">Basic GitHub Management</li>
+                <li class="skill-tag">Fundamental Networking Concept</li>
+                <li class="skill-tag">Fundamental Database Concept</li>
+            </ol>
+        </section>
+    </main>
+
+    <hr class="divider">
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer-container">
+        <h2 class="section-title">Contact Information</h2>
+        <div class="contact-links">
+            <p>Email: <a href="mailto:mamisha4554@gmail.com" class="contact-link">mamisha4554@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/muhammed-hassen" target="_blank" class="contact-link">linkedin.com/in/muhammed-hassen</a></p>
+            <p>Telegram: <a href="https://t.me/mamisha037" class="contact-link">@mamisha037</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3 class="sub-title">Send me a message</h3>
+            <form action="#" method="post" class="styled-form">
+                <!-- Full Name -->
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g., Muhammed Hassen" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+
+                <!-- Age (optional) -->
+                <div>
+                    <label for="age">Age (optional):</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </div>
+
+                <!-- Gender (radio buttons) -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <!-- Message -->
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <!-- Newsletter subscription -->
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Subscribe to my newsletter</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+<br>
+        <p class="copyright"><small>&copy; 2026 Designed by <span class="author-name">Muhammed Hassen Dawd</span>. All Rights Reserved.</small></p>
+    </footer>
+
+</body>
+</html>
